@@ -19,7 +19,7 @@
   --first-screen-display: block;
   --first-screen-font-family: var(--base-font-family);
   --first-screen-font-size: 3rem;
-  --first-screen-font-color-light: #d5d6db;
+  --first-screen-font-color-light: #50505c;
   --first-screen-font-color-dark: #adbac5;
   --first-screen-font-offset: 0;
   --first-screen-icon-size: 1.8rem;
@@ -3885,6 +3885,7 @@ figure.highlight .shrink-line:hover::before {
   color: var(--text-color-3);
   text-align: justify;
   word-wrap: break-word;
+  border-bottom: 2px dashed var(--border-color);
 }
 @media (max-width: 800px) {
   .post-page-container .post-content-container .post-content-bottom .post-content {
