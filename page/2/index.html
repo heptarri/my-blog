@@ -1,363 +1,185 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="keywords" content="Technology, Blog, Parolluvia, qingdkj, Ohnmaches, Minecraft, OI, Computer">
-    <meta name="description" content="A blog, about technology and life.">
-    <meta name="author" content="Parolluvia">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Parolluvia's Inn - Just record how I live.</title><meta name="author" content="Parolluvia"><meta name="copyright" content="Parolluvia"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="A blog, about technology and life.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Parolluvia&#39;s Inn">
+<meta property="og:url" content="https://blog.parolluvia.ink/page/2/index.html">
+<meta property="og:site_name" content="Parolluvia&#39;s Inn">
+<meta property="og:description" content="A blog, about technology and life.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="Parolluvia">
+<meta property="article:tag" content="Technology, Blog, Parolluvia, qingdkj, Ohnmaches, Minecraft, OI, Computer">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="https://s2.loli.net/2024/02/09/Kfg7PV9SUkNvGrI.jpg"><link rel="canonical" href="https://blog.parolluvia.ink/page/2/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":true,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: Parolluvia","link":"链接: ","source":"来源: Parolluvia's Inn","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: true,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Parolluvia\'s Inn',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2024-02-09 22:05:59'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
     
-    <title>
-        
-        Parolluvia&#39;s Inn
-    </title>
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
     
-<link rel="stylesheet" href="/css/style.css">
-
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
     
-        <link rel="shortcut icon" href="/images/img1.png">
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
     
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-<link rel="stylesheet" href="/font/css/fontawesome.min.css">
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="Parolluvia's Inn" type="application/atom+xml">
+</head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+  const $loadingBox = document.getElementById('loading-box')
+  const $body = document.body
+  const preloader = {
+    endLoading: () => {
+      $body.style.overflow = ''
+      $loadingBox.classList.add('loaded')
+    },
+    initLoading: () => {
+      $body.style.overflow = 'hidden'
+      $loadingBox.classList.remove('loaded')
+    }
+  }
 
-    
-<link rel="stylesheet" href="/font/css/regular.min.css">
+  preloader.initLoading()
+  window.addEventListener('load',() => { preloader.endLoading() })
 
-    
-<link rel="stylesheet" href="/font/css/solid.min.css">
-
-    
-<link rel="stylesheet" href="/font/css/brands.min.css">
-
-    
-        
-            
-        
-            
-                
-<link rel="stylesheet" href="/css/custom.css">
-
-            
-        
-    
-    <script class="keep-theme-configurations">
-    const KEEP = window.KEEP || {}
-    KEEP.hexo_config = {"hostname":"blog.parolluvia.ink","root":"/","language":"zh-CN","path":"search.xml"}
-    KEEP.theme_config = {"base_info":{"primary_color":"#C9CBDA","title":"Parolluvia's Inn","author":"Parolluvia","avatar":"/images/img1.png","logo":"/images/img1.png","favicon":"/images/img1.png"},"menu":{"Archives":"/archives","Links":"/links","RSS":"https://blog.parolluvia.ink/atom.xml","About":"/about"},"first_screen":{"enable":true,"background_img":"/images/bg1.png","background_img_dark":"/images/bg1.png","description":"Just record my life.","hitokoto":true},"social_contact":{"enable":false,"links":{"github":"https://github.com/qingdkj","weixin":null,"qq":null,"weibo":null,"zhihu":"https://www.zhihu.com/people/kong-kong-79-59-11","twitter":"https://twitter.com/ohnmachesya","facebook":null,"email":null}},"scroll":{"progress_bar":false,"percent":true,"hide_header":false},"home":{"category":false,"tag":false,"announcement":"This site is under construction."},"post":{"author_badge":{"enable":false,"level_badge":false,"custom_badge":["One","Two","Three"]},"word_count":{"wordcount":true,"min2read":true},"datetime_format":"YYYY-MM-DD HH:mm:ss","copyright_info":true,"share":false,"reward":{"enable":false,"img_link":null,"text":null}},"code_block":{"tools":{"enable":false,"style":"default"},"highlight_theme":"default"},"toc":{"enable":true,"number":false,"expand_all":false,"init_open":true,"layout":"right"},"website_count":{"busuanzi_count":{"enable":false,"site_uv":false,"site_pv":false,"page_pv":false}},"local_search":{"enable":true,"preload":true},"comment":{"enable":false,"use":"valine","valine":{"appid":null,"appkey":null,"server_urls":null,"placeholder":null},"gitalk":{"github_id":null,"github_admins":null,"repository":null,"client_id":null,"client_secret":null,"proxy":null},"twikoo":{"env_id":null,"region":null,"version":"1.6.21"},"waline":{"server_url":null,"reaction":false,"version":2},"giscus":{"repo":null,"repo_id":null,"category":"Announcements","category_id":null,"reactions_enabled":false},"artalk":{"server":null},"disqus":{"shortname":null}},"rss":{"enable":true},"lazyload":{"enable":true},"cdn":{"enable":false,"provider":"cdnjs"},"pjax":{"enable":true},"footer":{"since":2018,"word_count":true,"icp":{"enable":true,"record_code":"萌ICP备20240277号","url":"https://icp.gov.moe/?keyword=20240277"},"site_deploy":{"enable":true,"provider":"vercel","url":null},"shields_style":{"enable":false,"custom":[{"link_url":null,"img_url":null}]}},"inject":{"enable":true,"css":[null,"/css/custom.css"],"js":[null,"/_vercel/insights/script.js","/_vercel/speed-insights/script.js"]},"root":"","links":[{"name":"Lampese 东灯","link":"https://lampese.com","description":"你特别好，我喜欢你","avatar":"https://cdn.luogu.com.cn/upload/image_hosting/dhpjvh0c.png"},{"name":"CrisQ","link":"https://crisq.top","description":"雨打梨花深闭门","avatar":"https://crisq.top/avatar.webp"}],"version":"4.0.6"}
-    KEEP.language_ago = {"second":"%s 秒前","minute":"%s 分钟前","hour":"%s 小时前","day":"%s 天前","week":"%s 周前","month":"%s 个月前","year":"%s 年前"}
-    KEEP.language_code_block = {"copy":"复制代码","copied":"已复制","fold":"折叠代码块","folded":"已折叠"}
-    KEEP.language_copy_copyright = {"copy":"复制版权信息","copied":"已复制","title":"原文标题","author":"原文作者","link":"原文链接"}
-  </script>
-<meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="Parolluvia's Inn" type="application/atom+xml">
-</head>
-
-
-<body>
-<div class="progress-bar-container">
-    
-
-    
-        <span class="pjax-progress-bar"></span>
-        <i class="pjax-progress-icon fas fa-circle-notch fa-spin"></i>
-    
-</div>
-
-
-<main class="page-container border-box">
-
-    <!-- home first screen  -->
-    
-
-    <!-- page content -->
-    <div class="page-main-content border-box is-home">
-        <div class="page-main-content-top">
-            
-<header class="header-wrapper transparent-1">
-
-    <div class="border-box header-content">
-        <div class="left border-box">
-            
-                <a class="logo-image border-box" href="/">
-                    <img src="/images/img1.png">
-                </a>
-            
-            <a class="site-name border-box" href="/">
-               Parolluvia&#39;s Inn
-            </a>
-        </div>
-
-        <div class="right border-box">
-            <div class="pc">
-                <ul class="menu-list">
-                    <li class="menu-item">
-                        <a class="active"
-                           href="/"
-                        >首页</a>
-                    </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/archives"
-                            >归档</a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/links"
-                            >友链</a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="https://blog.parolluvia.ink/atom.xml"
-                            >RSS</a>
-                        </li>
-                    
-                        <li class="menu-item">
-                            <a class=""
-                               href="/about"
-                            >关于</a>
-                        </li>
-                    
-                    
-                        <li class="menu-item search search-popup-trigger">
-                            <i class="fas search fa-search"></i>
-                        </li>
-                    
-                </ul>
-            </div>
-            <div class="mobile">
-                
-                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
-                
-                <div class="icon-item menu-bar">
-                    <div class="menu-bar-middle"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="header-drawer">
-        <ul class="drawer-menu-list">
-            <li class="drawer-menu-item flex-center">
-                <a class="active"
-                   href="/"
-                >首页</a>
-            </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/archives"
-                    >归档</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/links"
-                    >友链</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="https://blog.parolluvia.ink/atom.xml"
-                    >RSS</a>
-                </li>
-            
-                <li class="drawer-menu-item flex-center">
-                    <a class=""
-                       href="/about"
-                    >关于</a>
-                </li>
-            
-        </ul>
-    </div>
-
-    <div class="window-mask"></div>
-
-</header>
-
-
-        </div>
-
-        <div class="page-main-content-middle border-box">
-
-            <div class="main-content border-box">
-                
-
-                    <div class="home-content-container fade-in-down-animation">
-    
-        <div class="website-announcement border-box">
-            <i class="icon left fa-solid fa-bullhorn"></i>
-            <div class="announcement border-box text-ellipsis">
-                <p>This site is under construction.</p>
-
-            </div>
-            <i class="icon right close fa-solid fa-close"></i>
-        </div>
-    
-    <ul class="home-post-list border-box">
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2022/01/30/%E9%80%89%E6%8B%A9/">
-                            选择
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            几天去一个理发店理发，师傅动作娴熟，帅气的很。从他的口中得知，他做理发师已经十多年了。我问他，你做理发师快乐吗？他毫不犹豫的回答，快乐，脸上还露出一丝笑意。
-于是，我突然非常羡慕。不是羡慕他的职业，而是他在十年前选择了一条正确的道路道路。理发师无疑是...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:01:42 GMT+0800">2024-02-08 18:01:42</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2022/01/30/%E9%80%89%E6%8B%A9/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2022/01/17/%E7%AA%97%E8%BE%B9%E7%9A%84%E7%A7%8B/">
-                            窗边的秋
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            我格外中意靠窗的位置。
-初中的教室楼层不高，是在一座粉刷着淡红色墙面的老楼上的一楼里，窗户外面就有一棵高大的银杏，风吹过的时候簌簌的响。秋天的时候，偶尔刮来几片枯黄的叶子，落在窗台上，显出其扇状的影子。来了兴致，还会拾几篇完好的，小心的展开，平整，夹...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 17:59:05 GMT+0800">2024-02-08 17:59:05</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2022/01/17/%E7%AA%97%E8%BE%B9%E7%9A%84%E7%A7%8B/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/12/10/%E8%BF%87%E5%8E%BB%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B9%8B%E9%97%B4/">
-                            过去与未来之间
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            那天傍晚，我和同学在食堂边的小路上慢慢地走，路尽头是灯火通明的超市。将落的夕阳卧在西边淡红色的云彩中，好不浪漫。忽的想起，已经十二月了啊。气温开始下降，树叶开始凋零，抬头看，也不再有那么蓝的天空和偶尔掠过的鸟影。看来，2021真的要结束了。曾经在一个...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:00:03 GMT+0800">2024-02-08 18:00:03</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/12/10/%E8%BF%87%E5%8E%BB%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B9%8B%E9%97%B4/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/26/%E8%A1%80%E6%9C%88/">
-                            血月
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            抬头看
+  if (true) {
+    document.addEventListener('pjax:send', () => { preloader.initLoading() })
+    document.addEventListener('pjax:complete', () => { preloader.endLoading() })
+  }
+})()</script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page fixed" id="page-header" style="background-image: url('https://s2.loli.net/2024/02/09/Hrd2vzq8NaR5T7i.jpg')"><nav id="nav"><span id="blog-info"><a href="/" title="Parolluvia's Inn"><span class="site-name">Parolluvia's Inn</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Parolluvia's Inn</h1><div id="site_social_icons"><a class="social-icon" href="https://twitter.com/ohnmachesya" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #1D9BF0;"></i></a><a class="social-icon" href="https://github.com/qingdkj" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:qingdkj@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.parolluvia.ink/atom.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #183153;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/01/30/%E9%80%89%E6%8B%A9/" title="选择">选择</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-30T14:59:53.000Z" title="发表于 2022-01-30 22:59:53">2022-01-30</time></span></div><div class="content">几天去一个理发店理发，师傅动作娴熟，帅气的很。从他的口中得知，他做理发师已经十多年了。我问他，你做理发师快乐吗？他毫不犹豫的回答，快乐，脸上还露出一丝笑意。
+于是，我突然非常羡慕。不是羡慕他的职业，而是他在十年前选择了一条正确的道路道路。理发师无疑是个平凡的职业，而做出这个选择，不是出于生计的无奈，就是真正的热爱。
+不知道在哪里看到这样一句话：当你在人生的各个岔路口都选择了自己所喜爱的，那么某一天你回头时就会发现，你正以一种多么热烈而多彩的方式去生活。看到这句话时，我很有感触。仔细琢磨，却又不是那么天衣无缝。我们追求遵循内心的选择，因为这可以将我们的生活变成梦想中的样子，可以让自己活得热烈，活得精彩。但是不可否认的是，更加符合理性、符合逻辑的选择会让未来登上一个更高的高度。就像算法中的动态规划和贪心，每一步做出的最优解并不一定是纵观全局的最优解。
+MBTI测试中一定有这样一个问题，询问你做选择时更多的是遵循理性还是意愿。其实对于相当一部分人来说，这个问题是相当难以抉择的。遵循意愿？但是一味遵循意愿可能会将未来的选择局限在很小的一个范围之内——有的人称之为任性。而纯粹的遵循逻辑呢？显然是 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/01/17/%E7%AA%97%E8%BE%B9%E7%9A%84%E7%A7%8B/" title="窗边的秋">窗边的秋</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-01-17T14:59:53.000Z" title="发表于 2022-01-17 22:59:53">2022-01-17</time></span></div><div class="content">我格外中意靠窗的位置。
+初中的教室楼层不高，是在一座粉刷着淡红色墙面的老楼上的一楼里，窗户外面就有一棵高大的银杏，风吹过的时候簌簌的响。秋天的时候，偶尔刮来几片枯黄的叶子，落在窗台上，显出其扇状的影子。来了兴致，还会拾几篇完好的，小心的展开，平整，夹进手边的书本中。于是之后的许多日子里，当我再次翻开那些覆满灰尘的旧书时，总会发现几片压的十分平整的枯黄的银杏叶，一段荒草丛生的时光便铺展在眼前，栩栩如生。
+那时教室的窗户是磨砂的，或许只是贴了一层窗户纸——这记忆中最熟悉的地方反而模糊起来。当有脚步靠近，人影晃动，教室中百无聊赖的听课的人们便兴奋不已，抬起头来，支起耳朵，似乎这人影是为他而来。当人影彻底在窗户中消失，脚步声渐远，才彻底失去兴趣，在老师枯燥的语调中构造着自己的天马行空。有时候脚步声也会停下，有时是什么人来送物件，然后嘴中一边絮叨着一边远去，有时候仅仅是侧耳倾听半晌，便快步走开了。还有的则是匆忙闯进门，在老师的耳边低语几句，便匆匆离去。于是，本寂静的教室中便骚动起来，猜测又有什么惊喜的发生。或许正值一阵秋风吹过，树叶瑟瑟，一种别有的秋的味道便酝酿出来。
+后来，秋风凉了，叶子落了， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/12/10/%E8%BF%87%E5%8E%BB%E4%B8%8E%E6%9C%AA%E6%9D%A5%E4%B9%8B%E9%97%B4/" title="过去与未来之间">过去与未来之间</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-12-10T12:14:02.000Z" title="发表于 2021-12-10 20:14:02">2021-12-10</time></span></div><div class="content">那天傍晚，我和同学在食堂边的小路上慢慢地走，路尽头是灯火通明的超市。将落的夕阳卧在西边淡红色的云彩中，好不浪漫。忽的想起，已经十二月了啊。气温开始下降，树叶开始凋零，抬头看，也不再有那么蓝的天空和偶尔掠过的鸟影。看来，2021真的要结束了。曾经在一个早晨，俯瞰着这个城市的天际，记忆便不自觉的溢出来。从这一年伊始直到现在，往事历历在目。曾经的那些熟悉的笑脸，那些只有两个人才能听懂的“暗号”，那些因为我的离开而永远耽搁下去的约定……不觉潸然泪下。前几天语文老师讲乡土中国，说语言其实是一群人之间的约定。老师让我们举个例子，我毫不犹豫的举起了手，然后竟一时语塞。那些记忆，一瞬间全部涌出来，但只能化为那节语文课一个默默站立的身影。我一直很避免提到我的过去——尽管并不丰富，甚至说是贫瘠。但是仿佛总是有一条射线，从内心深处发出，盯着现在的我，盯着站在数千名学生中间的一个最普通不过的身影。我没有告诉任何人，到前几天，如果热情依旧，笑容尚在，是我们相遇一周年的日子。那天，我登上学校里最高的楼，望向西方的天际线，然后流几滴泪，当作是一种简单的纪念，偷偷地，悄悄地。然后回到教室，上一个人的自习课。正值周末， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/26/%E8%A1%80%E6%9C%88/" title="血月">血月</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-26T03:14:47.000Z" title="发表于 2021-08-26 11:14:47">2021-08-26</time></span></div><div class="content">抬头看
 抬头看
 戮杀的月
 低吟浅唱
@@ -377,256 +199,37 @@
 四周阳光如初
 扭头向窗外
 黑幕再次沉下
-看看月亮吧...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:23:04 GMT+0800">2024-02-08 18:23:04</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/26/%E8%A1%80%E6%9C%88/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/19/%E5%9F%8E%E6%99%AF/">
-                            城景
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            那个傍晚，我放下笔，向外面走去。
-车格外匆忙，正是回家的时候。微微亮起的街灯，潇潇的树叶，深蓝的天，天上隐约的月，这些平常不过的景色，谁又会去在意呢？人们淹没在喧嚣的鸣笛声里，失焦的眼中满是点点的汽车尾灯，红的耀眼，不规则的移动着。于是，无数游离的灵...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:27:42 GMT+0800">2024-02-08 18:27:42</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/19/%E5%9F%8E%E6%99%AF/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/19/%E7%BB%93%E6%9D%9F/">
-                            结束
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            人总是不能坦然接受结束。
-一本小说也好，一段感情也好，几年时光也好，我们总能欣喜的接受他们开始的模样，却总不忍心读最后一页，说最后一句话，见最后一面。因为读过了就再也没有了，等下一次遇到如此的动心又不知道是何时。只好一步三回头地，反复摩挲最后几页文字...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:26:32 GMT+0800">2024-02-08 18:26:32</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/19/%E7%BB%93%E6%9D%9F/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/18/%E7%88%B1%E6%83%85%E5%90%97/">
-                            爱情吗
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            飞机的呼啸掠过窗外，一路向西。那遥远的记忆尽管经历了整个夏天的掩埋，依然可以瞥见他们的身影。试图逃离这一切，辗转数百公里，企图用地域的阻隔来腐蚀这些记忆，但是越到了快要忘却的时候，越不肯放手。
-仿佛是非常遥远的一段日子——其实不过是几个月而已。她和她...
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:28:19 GMT+0800">2024-02-08 18:28:19</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/18/%E7%88%B1%E6%83%85%E5%90%97/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/16/%E9%9B%A8/">
-                            雨
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            雨在城市的各个角落哭泣
+看看月亮吧
+门外嘶哑的讥笑
+天亮永不会到来
+目光又闪向窗外
+为何阳光依然如初
+为何低语依旧
+看看月亮吧
+开窗
+黑红色的声音
+欢迎加入月光派对
+浓郁的腥
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/19/%E5%9F%8E%E6%99%AF/" title="城景">城景</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-19T12:02:24.000Z" title="发表于 2021-08-19 20:02:24">2021-08-19</time></span></div><div class="content">那个傍晚，我放下笔，向外面走去。
+车格外匆忙，正是回家的时候。微微亮起的街灯，潇潇的树叶，深蓝的天，天上隐约的月，这些平常不过的景色，谁又会去在意呢？人们淹没在喧嚣的鸣笛声里，失焦的眼中满是点点的汽车尾灯，红的耀眼，不规则的移动着。于是，无数游离的灵魂便在这移动的孔隙中彷徨。
+我并不讨厌城市里的生活，尽管狭小，仿佛四周的孔都被堵住了，但并不是透不过气来。我从容的在人海中前进，偶尔抬头，望一眼或许别人未曾注意的风景，然后低下头继续往前走。这样，灰色的生活中便多了一抹色彩。比如说这眼前的夕阳。
+生活当然是精彩的啊。不是激情，也不是热血，只是在平淡当中有那么一点浪漫，足矣。浪漫真的无处不在，当你路过一座桥，可否注意到桥下粼粼的涟漪？可否望向远处，看水天一色，说不定还有孤雁留下孤傲的影。
+夕阳带来的美好不是长久的——落日隐入云间，那色彩已然黯淡。不过至少在今天，它留给了这个城市最美的一瞥。短暂的美之所以美，是因为独有心者才会发现。街边高楼的窗光辉依旧，仿佛在回忆方才的美好。我踱步在人行道上，看继续涌动的川流。
+车潮渐渐退去，只留空荡的街。偶尔会飞奔过去几点亮光，像落单的鸟。人行道砖被依次亮起的 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/19/%E7%BB%93%E6%9D%9F/" title="结束">结束</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-19T11:59:13.000Z" title="发表于 2021-08-19 19:59:13">2021-08-19</time></span></div><div class="content">人总是不能坦然接受结束。
+一本小说也好，一段感情也好，几年时光也好，我们总能欣喜的接受他们开始的模样，却总不忍心读最后一页，说最后一句话，见最后一面。因为读过了就再也没有了，等下一次遇到如此的动心又不知道是何时。只好一步三回头地，反复摩挲最后几页文字，恨不得浸入其中。就像离别之痛总是在最后一次聚会，最后的那一声再见，原本浅浅的离别之愁愈加浓郁。
+曾经沉醉于一个不怎么出名的作者的散文集。等到手下的书页越来越薄，便会下意识的放慢速度，让目光在字里行间多呆一会儿，尽量延后翻到最后一页的时间，因为读完了就没有如此能够打动我的文字了。就像一群人在一起好多年，哪怕之前日子多么漫长，最后也总是感觉像抓不住仅剩的那一点时光，只能由它默默地从指隙间离开了。想要放慢行走的速度，好好读一读这几年的记忆，却始终停不下脚步，看一天又一天从睁眼闭眼间溜走，眨眼就到了最后离别的那天。
+其实很久以后再回头看，其实结束也不过那么一回事。能够在茫茫人海中度过无数岔道口，然后聚在一起，本身就是一种幸运。但是每个人的眼中总有独属于自己的光，天上不止一颗星星。真到了最后，每个人都要去追寻自己的星，怎么就能抓住不放呢。
+离别那晚 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/18/%E7%88%B1%E6%83%85%E5%90%97/" title="爱情吗">爱情吗</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-18T12:03:01.000Z" title="发表于 2021-08-18 20:03:01">2021-08-18</time></span></div><div class="content">飞机的呼啸掠过窗外，一路向西。那遥远的记忆尽管经历了整个夏天的掩埋，依然可以瞥见他们的身影。试图逃离这一切，辗转数百公里，企图用地域的阻隔来腐蚀这些记忆，但是越到了快要忘却的时候，越不肯放手。
+仿佛是非常遥远的一段日子——其实不过是几个月而已。她和她的笑容，像春天的微风，掠过整个世界。抬头看到的微红的脸颊，轻轻摇曳的一缕头发，哪怕像是过去了很久，哪怕轮廓已经模糊，也不能完全忘却。她的样貌或许已经记忆不太清，只知道我曾经——或许现在也是——依然爱着这个人，但是这个人却从我的眼前逃走了。
+一天静下来，想细细数一数这些经历，却惊恐的发现，他们在逐渐远去。像隔着一层透亮的玻璃，这些记忆清晰可见，清晰可见的逐渐远去，但是我却留不住他们，只好眼睁睁看着他，消失在玻璃那边的雾色中。
+着天边翻滚的云彩，思量着这一切。对于身在这个彷徨的时代的我们，恋爱意味着什么？我们又为什么如此渴望着这样一段感情？我无从思考。在漫长而又煎熬的黑夜中，在不断滴落的泪中，似乎可以摸索出依稀一点答案。
+每个人都渴望爱情，像是获取一点希翼——一点黯淡世界中的明亮。因为会有一个人的出现，为你挡住人山人海。你通过他的眼睛，看到了更 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/16/%E9%9B%A8/" title="雨">雨</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-16T13:18:37.000Z" title="发表于 2021-08-16 21:18:37">2021-08-16</time></span></div><div class="content">雨在城市的各个角落哭泣
 有人望着雨惘思
 有人在雨中彷徨
 孤独的阴云呵
 带着整个人间的孤独
 俯瞰着蛛网般的市井
-
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:25:55 GMT+0800">2024-02-08 18:25:55</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/16/%E9%9B%A8/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/16/%E5%BD%B7%E5%BE%A8/">
-                            彷徨
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            我向斑斓走来
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/16/%E5%BD%B7%E5%BE%A8/" title="彷徨">彷徨</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-16T13:17:11.000Z" title="发表于 2021-08-16 21:17:11">2021-08-16</time></span></div><div class="content">我向斑斓走来
 却带回满身的苍白
 孑然一身于世上彷徨
 抬头撞见满目的空
@@ -634,384 +237,94 @@
 却不小心撞翻了回忆
 化为无声的泪
 小声滴落
-
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:25:27 GMT+0800">2024-02-08 18:25:27</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/16/%E5%BD%B7%E5%BE%A8/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-            <li class="home-post-item">
-
-                
-
-                <div class="home-post-item-bottom border-box">
-                    
-                    <h3 class="home-post-title border-box">
-                        <a href="/2021/08/07/%E9%AB%98%E6%A5%BC/">
-                            高楼
-                        </a>
-                    </h3>
-
-                    <div class="home-post-content keep-markdown-body">
-                        
-                            窗外
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2021/08/07/%E9%AB%98%E6%A5%BC/" title="高楼">高楼</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2021-08-07T04:04:12.000Z" title="发表于 2021-08-07 12:04:12">2021-08-07</time></span></div><div class="content">窗外
 又一座高楼建成
 我彻底失去了阳光
 只好在昏暗的阴影下
 强行享受着自由
-
-                        
-                    </div>
-
-                    
-
-<div class="post-meta-info-container border-box home">
-    <div class="post-meta-info border-box">
-        
-            <span class="meta-info-item border-box">
-                <i class="icon fas fa-history"></i>&nbsp;<span class="home-post-history" data-updated="Thu Feb 08 2024 18:24:37 GMT+0800">2024-02-08 18:24:37</span>
-            </span>
-        
-
-        
-
-        
-
-        
-
-        
-        
-        
-        
-    </div>
-
-    
-        <a class="home-read-more" href="/2021/08/07/%E9%AB%98%E6%A5%BC/">阅读全文&nbsp;<i class="icon fas fa-angle-right"></i></a>
-    
-</div>
-
-                </div>
-            </li>
-        
-    </ul>
-    
-    <div class="paginator border-box flex-center">
-        <div class="btn-wrap allowed">
-            <a class="jump-btn"
-               href="/"
-            ><i class="fa-solid fa-chevron-left"></i></a>
-        </div>
-
-
-        <div class="page-number-box border-box flex-center">
-            <input class="page-number-input border-box base-color-size"
-                   type="number"
-                   value="2"
-                   min="1"
-                   max="5"
-            ><span class="delimiter base-color-size">/</span><span class="base-color-size">5</span>
-        </div>
-
-
-        <div class="btn-wrap allowed">
-            <a class="jump-btn"
-               href="/page/3/"
-            ><i class="fa-solid fa-chevron-right"></i></a>
-        </div>
-    </div>
-
-
-
-
-</div>
-
-
-                
-            </div>
-
-        </div>
-
-        <div class="page-main-content-bottom border-box">
-            
-<footer class="footer border-box">
-    <div class="border-box website-info-box default">
-        
-            <div class="copyright-info info-item default">
-                &copy;&nbsp;<span>2018</span>&nbsp;-&nbsp;2024
-                
-                    &nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;&nbsp;<a href="/">Parolluvia</a>
-                
-            </div>
-
-            <div class="theme-info info-item default">
-                由&nbsp;<a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;驱动&nbsp;&&nbsp;主题&nbsp;<a class="keep-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep</a>
-            </div>
-
-            
-                <div class="icp-info info-item default">
-                    <a class=""
-                       target="_blank"
-                       href="https://icp.gov.moe/?keyword=20240277"
-                    >
-                        萌ICP备20240277号
-                    </a>
-                </div>
-            
-
-            
-                
-                <div class="deploy-info info-item default">
-                    
-                        本站由 <span class="tooltip" data-tooltip-content="Vercel"><img src="/images/deploy-provider/vercel.png"></span> 提供部署服务
-                    
-                </div>
-            
-        
-
-        <div class="count-item info-item default">
-            
-                <span class="count-box border-box word">
-                    <span class="item-type border-box">总字数</span>
-                    <span class="item-value border-box word">17.9k</span>
-                </span>
-            
-
-            
-
-            
-        </div>
-    </div>
-</footer>
-
-        </div>
-    </div>
-
-    <!-- post tools -->
-    
-
-    <!-- side tools -->
-    <div class="side-tools">
-        <div class="side-tools-container border-box side-tools-show-handle">
-    <ul class="side-tools-list side-tools-show-handle border-box">
-        <li class="tools-item tool-font-adjust-plus flex-center">
-            <i class="fas fa-search-plus"></i>
-        </li>
-
-        <li class="tools-item tool-font-adjust-minus flex-center">
-            <i class="fas fa-search-minus"></i>
-        </li>
-
-        <li class="tools-item tool-toggle-theme-mode flex-center">
-            <i class="fas fa-moon"></i>
-        </li>
-
-        <!-- rss -->
-        
-            <li class="tools-item rss flex-center">
-                <a class="flex-center"
-                   href="/atom.xml"
-                   target="_blank"
-                >
-                    <i class="fas fa-rss"></i>
-                </a>
-            </li>
-        
-
-        <li class="tools-item tool-scroll-to-bottom flex-center">
-            <i class="fas fa-arrow-down"></i>
-        </li>
-    </ul>
-
-    <ul class="exposed-tools-list border-box">
-        
-
-        
-
-        <li class="tools-item tool-toggle-show flex-center">
-            <i class="fas fa-cog fa-spin"></i>
-        </li>
-
-        <li class="tools-item tool-scroll-to-top flex-center show-arrow">
-            <i class="arrow fas fa-arrow-up"></i>
-            <span class="percent"></span>
-        </li>
-    </ul>
-</div>
-
-    </div>
-
-    <!-- image mask -->
-    <div class="zoom-in-image-mask">
-    <img class="zoom-in-image">
-</div>
-
-
-    <!-- local search -->
-    
-        <div class="search-pop-overlay">
-    <div class="popup search-popup">
-        <div class="search-header">
-          <span class="search-input-field-pre">
-            <i class="fas fa-keyboard"></i>
-          </span>
-            <div class="search-input-container">
-                <input autocomplete="off"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       placeholder="搜索..."
-                       spellcheck="false"
-                       type="search"
-                       class="search-input"
-                >
-            </div>
-            <span class="close-popup-btn">
-                <i class="fas fa-times"></i>
-            </span>
-        </div>
-        <div id="search-result">
-            <div id="no-result">
-                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
-            </div>
-        </div>
-    </div>
-</div>
-
-    
-
-    <!-- tablet toc -->
-    
-</main>
-
-
-
-
-<!-- common -->
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/header-shrink.js"></script>
-
-<script src="/js/back2top.js"></script>
-
-<script src="/js/toggle-theme.js"></script>
-
-<script src="/js/code-block.js"></script>
-
-<script src="/js/main.js"></script>
-
-<script src="/js/libs/anime.min.js"></script>
-
-
-<!-- local-search -->
-
-    
-<script src="/js/local-search.js"></script>
-
-
-
-<!-- lazyload -->
-
-    
-<script src="/js/lazyload.js"></script>
-
-
-
-<div class="pjax">
-    
-
-    <!-- category-page -->
-    
-
-    <!-- links-page -->
-    
-
-    <!-- photos-page -->
-    
-</div>
-
-<!-- mermaid -->
-
-
-<!-- pjax -->
-
-    
-<script src="/js/libs/pjax.min.js"></script>
-
-<script>
-    window.addEventListener('DOMContentLoaded', () => {
-        window.pjax = new Pjax({
-            selectors: [
-                'head title',
-                '.page-container',
-                '.pjax'
-            ],
-            history: true,
-            debug: false,
-            cacheBust: false,
-            timeout: 0,
-            analytics: false,
-            currentUrlFullReload: false,
-            scrollRestoration: false,
-        });
-
-        document.addEventListener('pjax:send', () => {
-            KEEP.utils.pjaxProgressBarStart()
-        });
-
-        document.addEventListener('pjax:complete', () => {
-            KEEP.utils.pjaxProgressBarEnd()
-            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'))
-            KEEP.initExecute()
-        });
-    });
-</script>
-
-
-
-
-    
-        
-    
-        
-            
-<script class="custom-inject-js" src="/_vercel/insights/script.js" data-pjax></script>
-
-        
-    
-        
-            
-<script class="custom-inject-js" src="/_vercel/speed-insights/script.js" data-pjax></script>
-
-        
-    
-
-</body>
-</html>
+</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/3/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Parolluvia</div><div class="author-info__description">A blog, about technology and life.</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">41</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/qingdkj"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://twitter.com/ohnmachesya" target="_blank" title="Twitter"><i class="fa-brands fa-twitter" style="color: #1D9BF0;"></i></a><a class="social-icon" href="https://github.com/qingdkj" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:qingdkj@outlook.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a><a class="social-icon" href="https://blog.parolluvia.ink/atom.xml" target="_blank" title="RSS"><i class="fa-solid fa-rss" style="color: #183153;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">该站正在建设中...</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/10/09/%E8%93%A6%E7%84%B6%E5%9B%9E%E9%A6%96/" title="蓦然回首">蓦然回首</a><time datetime="2023-10-09T10:06:28.000Z" title="发表于 2023-10-09 18:06:28">2023-10-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/07/%E9%9B%A8%E5%A4%9C/" title="雨夜">雨夜</a><time datetime="2023-06-07T10:04:58.000Z" title="发表于 2023-06-07 18:04:58">2023-06-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/07/%E4%B8%8A%E5%AD%A6/" title="上学">上学</a><time datetime="2023-06-07T06:44:26.000Z" title="发表于 2023-06-07 14:44:26">2023-06-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/05/17/%E4%BA%94%E6%9C%88%E7%9A%84%E9%A3%8E/" title="五月的风">五月的风</a><time datetime="2023-05-17T07:05:31.000Z" title="发表于 2023-05-17 15:05:31">2023-05-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/03/17/%E5%9B%9B%E6%9C%88%E7%9A%84%E5%BF%98%E5%8D%B4/" title="四月的忘却">四月的忘却</a><time datetime="2023-03-17T12:09:44.000Z" title="发表于 2023-03-17 20:09:44">2023-03-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/09/15/%E6%97%A5%E5%87%BA%E4%BB%A5%E5%89%8D/" title="日出以前">日出以前</a><time datetime="2022-09-15T14:56:02.000Z" title="发表于 2022-09-15 22:56:02">2022-09-15</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2022/09/15/%E9%81%93%E5%BE%B7%E6%9C%AC%E6%BA%90/" title="道德本源">道德本源</a><time datetime="2022-09-15T14:40:56.000Z" title="发表于 2022-09-15 22:40:56">2022-09-15</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/10/"><span class="card-archive-list-date">十月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">六月 2023</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">五月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">三月 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/09/"><span class="card-archive-list-date">九月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/07/"><span class="card-archive-list-date">七月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/05/"><span class="card-archive-list-date">五月 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">1</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">41</div></div><div class="webinfo-item"><div class="item-name">已运行时间 :</div><div class="item-count" id="runtimeshow" data-publishDate="2018-03-26T16:00:00.000Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">17.9k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-02-09T14:05:59.134Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2018 - 2024 By Parolluvia</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text"><a href="https://icp.gov.moe/?keyword=20240277" target="_blank">萌ICP备20240277号</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script src="/_vercel/insights/script.js"></script><script src="/_vercel/speed-insights/script.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener
+  btf.removeGlobalFnEvent('pjax')
+  btf.removeGlobalFnEvent('themeChange')
+
+  document.getElementById('rightside').classList.remove('rightside-show')
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+  typeof disqusjs === 'object' && disqusjs.destroy()
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+})
+
+document.addEventListener('pjax:error', e => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
